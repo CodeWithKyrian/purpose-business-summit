@@ -52,7 +52,8 @@ class TicketRegistered extends Notification implements ShouldQueue
         $notifiable->load('ticket');
 
         return (new MailMessage)
-                    ->line('Hello ' . $notifiable->firstname . ', congrats on purchasing a ticket to attend The Purpose Business Summit. We are delighted to see you on the 19th of March, 2022.')
+        ->greeting('Hello, ' . $notifiable->firstname)
+                    ->line('Congratulations on purchasing a ticket to attend The Purpose Business Summit. We are delighted to see you on the 19th of March, 2022.')
                     ->line('Please, keep your ticket safe as this will be used to verify your access to the event center. Below are your ticket details:')
                     ->line('Ticket Name: '. $notifiable->ticket->name. ', Ticket Code: '. $notifiable->ticket_code. ', Full Name: ' . $notifiable->fullname . '.')
                     ->action('Check Ticket', route('search', ['tcode' => $notifiable->ticket_code]))
