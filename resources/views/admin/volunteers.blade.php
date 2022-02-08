@@ -80,7 +80,7 @@
                                     <div class="flex">
                                         @if ($user->can('access-dashboard'))
                                             <a href="{{ route('admin.volunteer.disprove', $user) }}"
-                                                class="text-yellow-600 p-2 rounded">
+                                                class="text-yellow-600 hover:text-yellow-800 p-2 rounded">
                                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -90,7 +90,7 @@
                                             </a>
                                         @else
                                             <a href="{{ route('admin.volunteer.approve', $user) }}"
-                                                class="text-blue-600 p-2 rounded">
+                                                class="text-blue-600 hover:text-blue-800 p-2 rounded">
                                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -100,7 +100,7 @@
                                             </a>
                                         @endif
                                         <a href="{{ route('admin.volunteer.delete', $user) }}"
-                                            class="text-red-600 p-2 rounded">
+                                            class="text-red-600 hover:text-red-800 p-2 rounded">
                                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
