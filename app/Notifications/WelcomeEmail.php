@@ -43,7 +43,7 @@ class WelcomeEmail extends Notification implements ShouldQueue
     {
 
         return (new MailMessage)
-            ->salutation('Hello, ' . $notifiable->firstname)
+            ->greeting('Hello, ' . $notifiable->firstname)
             ->subject('Welcome to PBS Volunteer Service. ')
             ->line('Congratulations on signing up for a volunteer account on PBS. Please wait for some time for your account to be approved by the admin in order to login successfully.')
             ->line('Thanks for your co-operation. Below is a link to login to your dashboard and start signing up people for The Purpose Business Summit. ')
