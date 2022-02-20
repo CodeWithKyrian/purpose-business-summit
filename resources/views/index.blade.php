@@ -82,7 +82,7 @@
                         ever-changing markets, develop the competencies to the highest level, giving the underpining
                         confidence to achieve all thier business goals and objectives however challenging</p>
                     <p class="mb-2 leading-relaxed">The annual event will host numerous industry experts, those playing
-                        it big in the different niches to speal on various aread of business, focusing on <strong>The
+                        it big in the different niches to speak on various areas of business, focusing on <strong>The
                             PBS 5PPT (5 Pillar Point Topics)</strong>.</p>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
@@ -172,7 +172,7 @@
                             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Closing & Copywriting</h2>
                             <p class="leading-relaxed text-sm">"I will get back to you", an anthem for student
                                 enterpreneurs like you. Join us as the big game players reveal the secrets to avoid the
-                                student joicing syndrome</p>
+                                student pricing syndrome</p>
                         </div>
                     </div>
                     <div class="xl:w-1/3 md:w-1/2 p-4">
