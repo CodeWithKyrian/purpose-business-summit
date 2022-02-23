@@ -17,7 +17,7 @@ class AddTicketsToUsersTable extends Migration
             $table->foreignId('ticket_id')->after('password')->nullable()->constrained();
             $table->string('ticket_code')->unique()->nullable();
             $table->string('ticket_access')->default('offline');
-            $table->foreignId('referrer_id')->nullable()->constrained('users');
+            $table->foreignId('referrer_id')->nullable()->constrained('users')->nullOnDelete();
         });
     }
 

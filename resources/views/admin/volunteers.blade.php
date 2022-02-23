@@ -113,7 +113,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td class="text-sm text-center py-4" colspan="4">No volunteers have signed up</td>
+                                <td class="text-sm text-center py-4" colspan="5">No volunteers have signed up</td>
                             </tr>
                         @endforelse
                     </tbody>
