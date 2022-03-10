@@ -4,9 +4,8 @@
             <x-logo class="h-12 w-auto text-white" alpine-class="{ 'text-black' : !atTop|open}"></x-logo>
         </a>
         <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022
-            The Purpose Business Summit —
-            <a href="https://twitter.com/CodeWithKyrian" class="text-gray-500 ml-1" target="_blank"
-                rel="noopener noreferrer">@CodeWithKyrian</a>
+            The Purpose Business Summit — Developed by 
+            <a href="https://codewithkyrian.com" class="text-blue-500 ml-1" target="_blank">CodeWithKyrian</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a class="ml-3 text-gray-400" target="_blank" href="https://instagram.com/_pbsofficial">
