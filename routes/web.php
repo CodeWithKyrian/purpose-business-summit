@@ -19,8 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'Index'])->name('home');
 Route::get('search/', [HomeController::class, 'Search'])->name('search');
-Route::post('/ticket/pay', [HomeController::class, 'paystackRedirect'])->name('ticket.pay');
-Route::get('/payment/callback', [HomeController::class, 'paystackCallback'])->name('payment.callback');
+Route::post('/ticket/pay', [HomeController::class, 'whatsappRedirect'])->name('ticket.pay');
+// Route::post('/ticket/pay', [HomeController::class, 'paystackRedirect'])->name('ticket.pay');
+// Route::get('/payment/callback', [HomeController::class, 'paystackCallback'])->name('payment.callback');
 
 Route::middleware(['auth', 'approved'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminController::class, 'Dashboard'])->name('dashboard');

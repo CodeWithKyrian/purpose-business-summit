@@ -26,6 +26,33 @@ class HomeController extends Controller
     }
 
 
+    public function whatsappRedirect(Request $request)
+    {
+        $ticket = Ticket::find($request->ticket_id);
+        $firstname = $request->firstname;
+        $lastname = $request->lastname;
+        $email = $request->email;
+        $phone = $request->phone;
+        $price = "₦" .  number_format($ticket->price, 0);
+
+        $text = "Hi PBS, I just registered for the $ticket->name Ticket. Here are my details - 
+
+        *Firstname:  $firstname*, 
+        *Lastname: $lastname*, 
+        *Phone Number: $phone*, 
+        *Email Address: $email*.  
+        
+Kindly send the account details so I can make the payment of *$price* and secure my spot.";
+
+        $text = urlencode($text);
+
+        $link = "https://api.whatsapp.com/send?phone=+2349071739577&text=$text";
+
+        return redirect()->away($link);
+
+        // $redirectUrl = match()
+    }
+
     /**
      * Redirect the User to Paystack Payment Page
      * @return Url

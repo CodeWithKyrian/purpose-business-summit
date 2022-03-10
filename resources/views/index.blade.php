@@ -267,7 +267,12 @@
                     </a>
                     <a href="tel:_2349071739577"
                         class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none text-blue-800 shadow">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
                         <span class="ml-4 flex items-start flex-col leading-none">
                             <span class="title-font font-medium">Call Us</span>
                         </span>
@@ -319,30 +324,37 @@
                         <form class="px-6 py-4 lg:px-8 sm:pb-6 xl:pb-8" action="{{ route('ticket.pay') }}"
                             method="POST">
                             @csrf
-                            <input class="hidden" id="ticket_id" name="ticket_id" x-model="ticket_id"></input>
+                            <input class="hidden" id="ticket_id" name="ticket_id" x-model="ticket_id">
                             <div class="py-2">
                                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">First
                                     Name</label>
-                                <input type="text" name="firstname" placeholder="+234 * * *  * * * *  * * *"
+                                <input type="text" name="firstname" placeholder="Eg. John"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                     required>
                             </div>
                             <div class="py-2">
                                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Last
                                     Name</label>
-                                <input type="text" name="lastname" placeholder="+234 * * *  * * * *  * * *"
+                                <input type="text" name="lastname" placeholder="Eg. Doe"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                     required>
                             </div>
                             <div class="py-2">
                                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your
-                                    email</label>
+                                    Email</label>
                                 <input type="email" name="email" id="email"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                    placeholder="name@company.com" required>
+                                    placeholder="name@domain.com" required>
+                            </div>
+                            <div class="py-2">
+                                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Your
+                                    Phone</label>
+                                <input type="text" name="phone" id="phone"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="+234 * * *  * * * *  * * *" required>
                             </div>
 
-                            <button disabled type="submit"
+                            <button type="submit"
                                 class="w-full mt-6 text-white bg-opacity-75 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Proceed
                                 to Payment</button>
                         </form>
